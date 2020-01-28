@@ -1,74 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dark Netflix - Full visual timeline</title>
-  <meta charset="utf-8">
-  <meta name="description" content="Dark Netflix - Full visual timeline"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dark Netflix - Full visual timeline</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Dark Netflix - Full visual timeline"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
-
-  <style>
-    html {
-      overflow-y: scroll;
-      min-height: 100%;
-      box-sizing: border-box;
-    }
-
-    * {
-      box-sizing: inherit;
-    }
-
-    *::before {
-      box-sizing: inherit;
-    }
-
-    *::after {
-      box-sizing: inherit;
-    }
-
-    img {
-      font-style: italic;
-      vertical-align: middle;
-    }
-
-    picture {
-      display: block;
-    }
-
-    body {
-      margin: 0 !important;
-      position: relative;
-    }
-
-    .c-timeline {
-      height: 100vh;
-    }
-
-    .c-timeline__image {
-      height: 100vh !important;
-    }
-  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
 
-<section  class="c-timeline">
-  <img id="SVGContainer" class="c-timeline__image" src="./img/dark-netflix-visual-timeline.svg" alt="Full visual timeline">
+<section class="c-timeline">
+    <img id="SVGContainer" class="c-timeline__image" src="./img/dark-netflix-visual-timeline.svg" alt="Full visual timeline">
+
+    <div class="c-timeline__message">
+        <h1>Netflix Dark timeline <span>Everything that's happened in season 1 & 2 explained visually and connected</span></h1>
+
+        <div>Hi! I'm <a href="https://www.reddit.com/user/aldersonloop59" target="_blank">/u/aldersonloop59</a> I've created a timeline that shows all the important events that happened along season 1 & season 2 in Dark, the Netflix show. <br> <br> Join us in the <a href="#" target="_blank">Reddit discussion</a> and let me know if you see any errors or you wish to contribute with useful
+            information.
+        </div>
+
+        <div class="c-timeline__message__buttons">
+            <a class="o-button o-button--color-primary o-button--shadow-color-primary" href="https://www.lucidchart.com/documents/view/a5e1f8d9-ff87-4adb-ab39-b1ce42fc1146" target="_blank">View timeline in Lucidchart</a>
+            <a class="o-button o-button--color-secondary o-button--shadow-color-secondary" href="./img/dark-netflix-visual-timeline.svg" download>Download SVG</a>
+        </div>
+    </div>
 </section>
-
-<script src='https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js'></script>
-
-<script>
-  var element = document.querySelector('#SVGContainer');
-
-  panzoom(element, {
-    zoomSpeed: 0.25,
-    smoothScroll: false,
-    bounds: true,
-    boundsPadding: 0.1,
-    minZoom: 1
-  });
-</script>
-
 </body>
 </html>

@@ -1,0 +1,186 @@
+html {
+    overflow: hidden;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    font-style: italic;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0 !important;
+    position: relative;
+}
+
+a {
+    color: #2196F3;
+}
+
+a:hover {
+    color: #2274b5;
+}
+
+.c-timeline {
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.c-timeline__image {
+    height: 100vh !important;
+}
+
+.c-timeline__message {
+    background-color: #333333;
+    padding: 2em;
+    color: white;
+    border-top: 10px solid #585858;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-timeline__message {
+        display: none;
+    }
+}
+
+.c-timeline__message h1 {
+    font-family: sans-serif;
+    margin: 0 !important;
+    margin-bottom: 0.75em !important;
+    border-bottom: 2px dashed #585858;
+    padding-bottom: 0.5em;
+}
+
+.c-timeline__message h1 span {
+    font-size: 60%;
+    margin-left: 1em;
+    color: #bfbfbf;
+}
+
+.c-timeline__message__buttons {
+    margin-top: 1em;
+    float: right;
+}
+
+.c-timeline__message__buttons > * {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.o-button, input[type=file] + label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    min-width: 220px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 calc(4px * 5);
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-clip: padding-box;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button:active, .o-button:focus, .o-button:hover, input[type=file] + label:active, input[type=file] + label:focus, input[type=file] + label:hover {
+        color: currentColor
+    }
+}
+
+.o-button--color-primary {
+    background-color: #E50914;
+    color: white;
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--color-primary:hover {
+        background-color: #d23940;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--color-primary:active, .o-button--color-primary:focus {
+        background-color: #c7121b;
+        color: white;
+    }
+}
+
+.o-button--color-secondary {
+    background-color: #607D8B;
+    color: white;
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--color-secondary:hover {
+        background-color: #789aab;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--color-secondary:active, .o-button--color-secondary:focus {
+        background-color: #3e535d;
+        color: white;
+    }
+}
+
+.o-button--shadow-color-primary {
+    -webkit-box-shadow: 8px 8px 0 rgba(229, 26, 47, .2);
+    box-shadow: 8px 8px 0 rgba(229, 26, 47, .2)
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--shadow-color-primary:active, .o-button--shadow-color-primary:focus, .o-button--shadow-color-primary:hover {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
+    }
+}
+
+.o-button--shadow-color-secondary {
+    -webkit-box-shadow: 8px 8px 0 rgba(96, 125, 139, 0.2);
+    box-shadow: 8px 8px 0 rgba(96, 125, 139, 0.2);
+}
+
+@media only screen and (min-width: 480px) {
+    .o-button--shadow-color-secondary:active, .o-button--shadow-color-secondary:focus, .o-button--shadow-color-secondary:hover {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
+    }
+}
