@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dark Netflix - Full visual timeline</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Dark Netflix - Full visual timeline"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
+
+  <style>
+    html {
+      overflow-y: scroll;
+      min-height: 100%;
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: inherit;
+    }
+
+    *::before {
+      box-sizing: inherit;
+    }
+
+    *::after {
+      box-sizing: inherit;
+    }
+
+    img {
+      font-style: italic;
+      vertical-align: middle;
+    }
+
+    picture {
+      display: block;
+    }
+
+    body {
+      margin: 0 !important;
+      position: relative;
+    }
+
+    .c-timeline {
+      height: 100vh;
+    }
+
+    .c-timeline__image {
+      height: 100vh !important;
+    }
+  </style>
+</head>
+<body>
+
+<section  class="c-timeline">
+  <img id="SVGContainer" class="c-timeline__image" src="./img/dark-netflix-visual-timeline.svg" alt="Full visual timeline">
+</section>
+
+<script src='https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js'></script>
+
+<script>
+  var element = document.querySelector('#SVGContainer');
+
+  panzoom(element, {
+    zoomSpeed: 0.25,
+    smoothScroll: false,
+    bounds: true,
+    boundsPadding: 0.1,
+    minZoom: 1
+  });
+</script>
+
+</body>
+</html>

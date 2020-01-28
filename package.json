@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "iv-viewer": "^2.0.1",
+    "svg-pan-zoom-container": "^0.2.6"
+  },
+  "devDependencies": {
+    "inline-svg": "^2.2.3"
+  }
+}
