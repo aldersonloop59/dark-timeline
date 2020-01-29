@@ -1,7 +1,7 @@
 html {
-    overflow: hidden;
-    min-height: 100%;
     box-sizing: border-box;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 * {
@@ -19,17 +19,24 @@ body {
 }
 
 a {
-    color: #2196F3;
+    color: #FFEB3B;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
-    color: #2274b5;
+    color: #FFC107;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .c-timeline {
+    font-family: sans-serif;
     height: 100vh;
     position: relative;
-    font-family: sans-serif;
+    overflow: auto;
 }
 
 .c-timeline__image {
@@ -38,38 +45,38 @@ a:hover {
 
 .c-timeline__message {
     background-color: #333333;
-    padding: 2em;
-    color: white;
     border-top: 10px solid #585858;
-    position: absolute;
     bottom: 0;
+    color: white;
     left: 0;
+    padding: 2em;
+    position: fixed;
     right: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .c-timeline__message {
         display: none;
     }
 }
 
 .c-timeline__message h1 {
+    border-bottom: 2px dashed #585858;
     font-family: sans-serif;
     margin: 0 !important;
     margin-bottom: 0.75em !important;
-    border-bottom: 2px dashed #585858;
     padding-bottom: 0.5em;
 }
 
 .c-timeline__message h1 span {
+    color: #bfbfbf;
     font-size: 60%;
     margin-left: 1em;
-    color: #bfbfbf;
 }
 
 .c-timeline__message__buttons {
-    margin-top: 1em;
     float: right;
+    margin-top: 2em;
 }
 
 .c-timeline__message__buttons > * {
