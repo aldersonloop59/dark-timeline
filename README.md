@@ -1,4 +1,4 @@
-# Dark timeline - Everything that's happened in season 1 & 2 explained visually and connected
+# Netflix Dark timeline - Everything that's happened in season 1 & 2 explained visually and connected
 
 ## Explore the timeline
 
